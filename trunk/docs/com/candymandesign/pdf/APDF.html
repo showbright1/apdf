@@ -1,0 +1,746 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="APDF,com.candymandesign.pdf.APDF,AUTHOR,BLOG,CONTACT,NAME,VERSION,autoClean,currentPage,addPage,clean,export,getNumberOfPages,getPageByID,getPageByName,setAuthor,setFormat,setKeywords,setMargins,setOrientation,setPageSize,setSubject,setTitle,setUnit,toString" name="keywords">
+<title>com.candymandesign.pdf.APDF</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'APDF - APDF';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">APDF V1.0.0</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?com/candymandesign/pdf/APDF.html&amp;com/candymandesign/pdf/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;APDF</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class APDF"); titleBar_setSubNav(true,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.candymandesign.pdf</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class APDF</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">APDF <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> flash.events.EventDispatcher</td>
+</tr>
+</table>
+<p></p>
+  The APDF class enables to create and export PDF documents from Flex. 
+   
+  Simple usage example:
+  <div class='listing'><pre><code>
+  
+  import com.candymandesign.pdf.APDF;
+  
+  var pdf:APDF = new APDF();
+  pdf.addPage();
+  pdf.currentPage.addText("Hello world!");
+  pdf.export("http://localhost/toPDF/logic/apdf.php");
+  
+  </code></pre></div>
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#autoClean">autoClean</a> : Boolean = true<div class="summaryTableDescription">
+   If value is <code>true</code>, it will destroide all the pages after export.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#currentPage">currentPage</a> : <a href="objects/APDFPage.html">APDFPage</a>
+<div class="summaryTableDescription">
+   The current page in the document.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#APDF()">APDF</a>()</div>
+<div class="summaryTableDescription">
+   Constructor.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addPage()">addPage</a>($name:String = null):void</div>
+<div class="summaryTableDescription">
+   Add new page in the document.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clean()">clean</a>():void</div>
+<div class="summaryTableDescription">
+   Clean all the pages in the APDF object.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#export()">export</a>($path:String):void</div>
+<div class="summaryTableDescription">
+   Export PDF document.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getNumberOfPages()">getNumberOfPages</a>():int</div>
+<div class="summaryTableDescription">
+   Returns number of pages in APDF document.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getPageByID()">getPageByID</a>($id:int):<a href="objects/APDFPage.html">APDFPage</a>
+</div>
+<div class="summaryTableDescription">
+   Returns the APDF page with given id.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getPageByName()">getPageByName</a>($name:String):<a href="objects/APDFPage.html">APDFPage</a>
+</div>
+<div class="summaryTableDescription">
+   
+   Returns the page with given name.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setAuthor()">setAuthor</a>($author:String):void</div>
+<div class="summaryTableDescription">
+   Set the name of the author.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setFormat()">setFormat</a>($docFormat:<a href="objects/APDFormat.html">APDFormat</a>):void</div>
+<div class="summaryTableDescription">
+   Set the format of PDF document.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setKeywords()">setKeywords</a>($keywords:String):void</div>
+<div class="summaryTableDescription">
+   Set the keywords.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setMargins()">setMargins</a>($left:Number = 10, $top:Number = 10, $right:Number = 10):void</div>
+<div class="summaryTableDescription">
+   Set margins in the PDF document.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setOrientation()">setOrientation</a>($orientation:String):void</div>
+<div class="summaryTableDescription">
+   Set the orientation of the PDF document.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setPageSize()">setPageSize</a>($pageSize:String):void</div>
+<div class="summaryTableDescription">
+   Set page size of PDF document.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setSubject()">setSubject</a>($subject:String):void</div>
+<div class="summaryTableDescription">
+   Set the subject of document.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setTitle()">setTitle</a>($title:String):void</div>
+<div class="summaryTableDescription">
+   Set the title of document.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setUnit()">setUnit</a>($unit:String):void</div>
+<div class="summaryTableDescription">
+   Set unit of PDF document.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toString()">toString</a>():String</div>
+<div class="summaryTableDescription">
+   Returns APDF object as a String.</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#AUTHOR">AUTHOR</a> : String = "(c) Mirko Bordjoski 2008."<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#BLOG">BLOG</a> : String = "http://candymandesign.blogspot.com"<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#CONTACT">CONTACT</a> : String = "candymandesign@gmail.com"<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#NAME">NAME</a> : String = "APDF"<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#VERSION">VERSION</a> : String = "Beta 1.0.0"<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">APDF</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="autoClean"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">autoClean</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var autoClean:Boolean = true</code><p>
+   If value is <code>true</code>, it will destroide all the pages after export. 
+   </p></div>
+<a name="currentPage"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">currentPage</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var currentPage:<a href="objects/APDFPage.html">APDFPage</a></code><p>
+   The current page in the document.
+   </p></div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="APDF()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">APDF</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function APDF()</code><p>
+   Constructor.
+   The APDF class enable to export PDF documents from Flex.  
+   </p></div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addPage()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addPage</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addPage($name:String = null):void</code><p>
+   Add new page in the document.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$name</span>:String</code> (default = <code>null</code>)<code></code> &mdash; $name - The name of the new page.
+   
+   Usage example:
+   <div class='listing'><pre><code>
+   
+   import com.candymandesign.pdf.APDF;
+   
+   var pdf:APDF = new APDF();
+   pdf.addPage("firstPage");
+   pdf.addPage("secondPage");
+   trace(pdf.getNumberOfPages());  
+   
+   </code></pre></div>
+   
+   </td>
+</tr>
+</table>
+</div>
+<a name="clean()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clean</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clean():void</code><p>
+   Clean all the pages in the APDF object. 
+   </p></div>
+<a name="export()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">export</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function export($path:String):void</code><p>
+   Export PDF document.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$path</span>:String</code> &mdash; $path - Path to apdf.php file.
+   </td>
+</tr>
+</table>
+</div>
+<a name="getNumberOfPages()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getNumberOfPages</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getNumberOfPages():int</code><p>
+   Returns number of pages in APDF document.
+   </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code></td>
+</tr>
+</table>
+</div>
+<a name="getPageByID()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getPageByID</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getPageByID($id:int):<a href="objects/APDFPage.html">APDFPage</a></code><p>
+   Returns the APDF page with given id. 
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$id</span>:int</code> &mdash;  - ID of the page.
+   
+   Usage example:
+   <div class='listing'><pre><code>
+   
+   import com.candymandesign.pdf.APDF;
+   
+   var pdf:APDF = new APDF();
+   pdf.addPage();
+   pdf.addPage();
+   pdf.addPage();
+   
+   for(var i:int = 0; i < pdf.getNumberOfPages(); i++)
+   {
+     pdf.getPageByID(i).addText("Page " + i.toString());
+   }
+   
+   pdf.export("http://localhost/toPDF/logic/apdf.php");
+    
+   </code></pre></div>
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="objects/APDFPage.html">APDFPage</a></code></td>
+</tr>
+</table>
+</div>
+<a name="getPageByName()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getPageByName</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getPageByName($name:String):<a href="objects/APDFPage.html">APDFPage</a></code><p>
+   
+   Returns the page with given name.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$name</span>:String</code> &mdash; $name  - the name of the page.
+   
+   Usage example:
+   <div class='listing'><pre><code>
+   
+   import com.candymandesign.pdf.APDF;
+   
+   var pdf:APDF = new APDF();
+   pdf.addPage("firstPage");
+   pdf.addPage("secondPage");
+   pdf.addPage("nPage");
+   
+   pdf.getPageByName("secondPage").addImage(my_mc);
+   pdf.getPageByName("firstPage").addText("Jump to page");
+   
+   pdf.export("http://localhost/toPDF/logic/apdf.php");
+    
+   </code></pre></div>
+   
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="objects/APDFPage.html">APDFPage</a></code></td>
+</tr>
+</table>
+</div>
+<a name="setAuthor()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setAuthor</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setAuthor($author:String):void</code><p>
+   Set the name of the author.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$author</span>:String</code></td>
+</tr>
+</table>
+</div>
+<a name="setFormat()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setFormat</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setFormat($docFormat:<a href="objects/APDFormat.html">APDFormat</a>):void</code><p>
+   Set the format of PDF document.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$docFormat</span>:<a href="objects/APDFormat.html">APDFormat</a></code> &mdash; $docFormat  - The APDFormat object.
+   
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="objects/APDFormat.html" target="">objects/APDFormat.html</a>
+</div>
+</div>
+<a name="setKeywords()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setKeywords</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setKeywords($keywords:String):void</code><p>
+   Set the keywords. Leave empty space between the keywords.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$keywords</span>:String</code> &mdash; $keywords  - The keywords.
+   </td>
+</tr>
+</table>
+</div>
+<a name="setMargins()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setMargins</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setMargins($left:Number = 10, $top:Number = 10, $right:Number = 10):void</code><p>
+   Set margins in the PDF document. Default value is 10mm. Change this values if you change the unit.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$left</span>:Number</code> (default = <code>10</code>)<code></code> &mdash; $left  - The left margin.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">$top</span>:Number</code> (default = <code>10</code>)<code></code> &mdash; $top  - The top margin.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">$right</span>:Number</code> (default = <code>10</code>)<code></code> &mdash; $right  - The right margin.
+   </td>
+</tr>
+</table>
+</div>
+<a name="setOrientation()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setOrientation</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setOrientation($orientation:String):void</code><p>
+   Set the orientation of the PDF document.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$orientation</span>:String</code> &mdash; $orientation  - The orientation of PDF document.
+   
+   Usage example:
+   <div class='listing'><pre></code>
+   import com.candymandesign.pdf.APDF;
+   import com.candymandesign.pdf.objects.APDFormat;
+   
+   var pdf:APDF = new APDF();
+   pdf.setOrientation(APDFormat.LANDSCAPE);
+   
+   </code></pre></div>
+   
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="objects/APDFormat.html" target="">objects/APDFormat.html</a>
+</div>
+</div>
+<a name="setPageSize()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setPageSize</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setPageSize($pageSize:String):void</code><p>
+   Set page size of PDF document.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$pageSize</span>:String</code> &mdash; $pageSize  - The format of PDF document.
+   
+   Usage example:
+   <div class='listing'><pre></code>
+   import com.candymandesign.pdf.APDF;
+   import com.candymandesign.pdf.objects.APDFormat;
+   
+   var pdf:APDF = new APDF();
+   pdf.setPageSize(APDFormat.PAGE_SIZE_A5);
+   
+   </code></pre></div>
+   
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="objects/APDFormat.html" target="">objects/APDFormat.html</a>
+</div>
+</div>
+<a name="setSubject()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setSubject</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setSubject($subject:String):void</code><p>
+   Set the subject of document.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$subject</span>:String</code></td>
+</tr>
+</table>
+</div>
+<a name="setTitle()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setTitle</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setTitle($title:String):void</code><p>
+   Set the title of document.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$title</span>:String</code></td>
+</tr>
+</table>
+</div>
+<a name="setUnit()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setUnit</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setUnit($unit:String):void</code><p>
+   Set unit of PDF document. Default value is mm.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">$unit</span>:String</code> &mdash; $unit  - unit.
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="objects/APDFormat.html" target="">objects/APDFormat.html</a>
+</div>
+</div>
+<a name="toString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function toString():String</code><p>
+   Returns APDF object as a String.
+   </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code></td>
+</tr>
+</table>
+</div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="AUTHOR"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">AUTHOR</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const AUTHOR:String = "(c) Mirko Bordjoski 2008."</code>
+</div>
+<a name="BLOG"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">BLOG</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const BLOG:String = "http://candymandesign.blogspot.com"</code>
+</div>
+<a name="CONTACT"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">CONTACT</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const CONTACT:String = "candymandesign@gmail.com"</code>
+</div>
+<a name="NAME"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">NAME</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const NAME:String = "APDF"</code>
+</div>
+<a name="VERSION"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">VERSION</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const VERSION:String = "Beta 1.0.0"</code>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->
